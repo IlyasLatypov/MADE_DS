@@ -1,19 +1,19 @@
 <!doctype html>
-<body background="/Users/emeli/Documents/dev/newsgroups_demonstration/templates/reks.jpg">
+<body>
 
-<title>News demo</title>
+<title>Genres demo</title>
 
 
 
 <form action="{{ url_for('index_page') }}" method=post>
     <dl>
-        <dt>Enter news text: <br>
+        <dt>Enter quotes from movies: <br>
         <dd><textarea name=text rows=5 cols=40>{{ text }}</textarea>
-        <dd><input type=submit value="Predict group">
+        <dd><input type=submit value="Predict genres">
     </dl>
 </form>
 
 
-<br>Predicted group:<br>
+<br>Predicted genres:<br>
 {{ prediction_message }}
 </body>
